@@ -1,0 +1,201 @@
+body{
+    background: azure;
+}
+h1{
+    font-family: "Pacifico", cursive;
+}
+div{
+    text-align: center;
+    width: 500px; 
+}
+ol{
+    font-family: "Jersey 10", sans-serif;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    padding: 5px;
+    gap: 5px;
+    font-size: 100%;
+    
+    background: rgb(238,220,174);
+    background: radial-gradient(circle, rgba(238,220,174,1) 0%, rgba(237,90,90,1) 100%);;
+    width: 500px;
+    height: 300px;
+    border: 10px solid rgb(182, 182, 182);
+    margin: 15px;
+}
+li{
+    text-align: right;
+}
+.primer-dia{
+    grid-column-start: 4;
+    color: red;
+}
+.domingos{
+    color: blue;
+}
+.festivo{
+    color: red
+}
+.nombre-dia{
+background:#decbcb;
+font-weight: bold;
+text-align: center;
+}
+.boton-modal{
+    padding: 40px;
+    background-color: aliceblue;
+}
+.boton-modal label{
+    padding: 10px 15px;
+    background-color: rgb(130, 195, 248);
+    color: black;
+    font-family: "Bungee Spice", sans-serif;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+.boton-modal label:hover{
+    background-color: rgb(155, 76, 245);
+}
+#btn-modal{
+    display: none;
+}
+.contenedor-modal{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top:0; left:0;
+    background-color: rgba(144, 148, 150, 0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+#btn-modal:checked ~.contenedor-modal{
+    display: flex;
+
+}
+.contenido-modal{
+    font-family: "Fredericka the Great", serif;
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: rgb(215, 224, 224);
+    border-radius: 4px;
+}
+.contenido-modal h2{
+   margin-bottom: 15px;
+}
+.contenido-modal p{
+   padding: 15px 0px;
+   border-top: 1px solid #eedcae;
+   border-bottom: 1px solid #ece6d7;
+}
+.contenido-modal .btn-cerrar{
+    width: 100%;
+    margin-top: 15px;
+    display: flex;
+    justify-content: flex-end;
+ }
+ .contenido-modal .btn-cerrar label{
+    padding: 7px 10px;
+   background-color: rgb(144, 144, 163);
+   color: rgb(53, 1, 1);
+   border-radius: 4px;
+   cursor: pointer;
+   transition: all 300 ease;
+ }
+ .contenido-modal .btn-cerrar label:hover{
+   background-color: violet
+ }
+ .cerrar-modal{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top:0; left: 0;
+    z-index: -1;
+ }
+ @media screen and (max-width:800px){
+    .contenido-modal{
+        width: 90%;
+    }
+}
+.boton-modal2{
+    padding: 40px;
+    background-color: aliceblue;
+}
+.boton-modal2 label{
+    padding: 10px 15px;
+    background-color: rgb(225, 231, 130);
+    color: black;
+    font-family: "Bungee Spice", sans-serif;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+.boton-modal2 label:hover{
+    background-color: rgb(160, 245, 216);
+}
+#btn-modal2{
+    display: none;
+}
+.contenedor-modal2{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top:0; left:0;
+    background-color: rgba(144, 148, 150, 0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+#btn-modal2:checked ~.contenedor-modal2{
+    display: flex;
+}
+.contenido-modal2{
+    font-family: "Josefin Slab", serif;
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: rgb(215, 224, 224);
+    border-radius: 4px;
+}
+.contenido-modal2 h2{
+   margin-bottom: 15px;
+}
+.contenido-modal2 p{
+   padding: 15px 0px;
+   border-top: 1px solid #eedcae;
+   border-bottom: 1px solid #ece6d7;
+}
+.contenido-modal2 .btn-cerrar2{
+    width: 100%;
+    margin-top: 15px;
+    display: flex;
+    justify-content: flex-end;
+ }
+ .contenido-modal2 .btn-cerrar2 label{
+    padding: 7px 10px;
+   background-color: rgb(144, 144, 163);
+   color: rgb(53, 1, 1);
+   border-radius: 4px;
+   cursor: pointer;
+   transition: all 300 ease;
+ }
+ .contenido-modal2 .btn-cerrar2 label:hover{
+   background-color: violet
+ }
+ .cerrar-modal2{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top:0; left: 0;
+    z-index: -1;
+ }
+ @media screen and (max-width:800px){
+    .contenido-modal2{
+        width: 90%;
+    }
+}

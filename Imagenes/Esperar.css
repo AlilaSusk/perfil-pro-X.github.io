@@ -1,0 +1,131 @@
+body{
+    background: black;
+}
+header{
+    background: #d8d9c0;
+    width: 100%;
+    clear: both;
+    content:'';
+    display: table;
+}    
+.menu{
+    width: 900px;
+    margin:0 auto;
+}
+img{
+    width: 120px;
+    height: 100px;
+    float: left;
+    padding: 8px;
+}
+nav{
+    float: right;
+}
+nav ul li{
+    list-style: none;
+    margin-left:7px;
+    padding: 25px 0;
+    float: left;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #444;
+    font-weight: bold;
+}
+nav ul li a::before{
+    display: block;
+    content:'';
+    width: 100%;
+    background:#444 ;
+    height:5px;
+    top:0;
+    position: absolute;
+    transition: width 0.2s;
+}
+nav ul li a:hover::before{
+width: 100%;
+}
+.flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#fondo{
+    width: 1000px;
+    height: 150px;
+    background-image: url(Imagenes/telon.jpg);
+    background-repeat: no repeat;
+    background-size: cover;
+    background-position: center;
+}
+#fondo h1{
+    color:aquamarine;
+    text-align: center;
+}
+#fondo h2{
+    color: white;
+    text-align: center;
+}
+#fondo p{
+    color:azure;
+    text-align: none;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+aside{
+    flex:20;
+    background-color: #fe9fa3;
+    padding: 2px;
+}
+#contenido{
+text-align: left;
+font-size: 100%;
+color: rgb(58, 57, 57);
+background-color: #fbdfde;
+width: 400px;
+height: 350px;
+padding: 20px;
+border: 10px solid rgb(182, 182, 182);
+margin: 15px
+}
+.container{
+    display: grid;
+    grid-template-columns: 80px 80px 80px;
+    grid-template-rows: auto auto auto;
+}
+.container div{
+    background-color: #a7b33a;
+    text-align: center;
+    color: #444;
+    border: 1px solid blueviolet;
+}
+button{
+    border: 0;
+    background-image: linear-gradient(
+        150deg
+        rgb(49, 31, 66)
+        rgb(78, 78, 160)
+        rgb(144, 199, 199) 
+        );
+        border-radius: 8px;
+        color: #d8d9c0;
+        display: flex;
+        padding: 4px;
+        cursor: pointer;
+        transition: .3s;
+}
+button span{
+    background-color: rgb(7, 1, 1);
+    padding: 16px 24px;
+    border-radius: 6px;
+    transition: .3s;
+}
+button:active{
+    transform: scale(0.9);
+}
+footer{
+    background-color: rgb(255, 195, 195);
+    color:rgb(20, 19, 19);
+}
